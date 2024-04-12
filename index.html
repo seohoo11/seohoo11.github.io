@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teachable Machine 분류</title>
+    <!-- 외부 CSS 파일 불러오기 -->
+    <link rel="stylesheet" href="uploader-styles.css">
+</head>
+<body>
+    <input type="file" id="file" />
+    <label for="file" class="file__drop" data-image-uploader>Drop images here</label>
+    <div>
+    <p>Your image:</p>
+    <img data-image />
+    </div>
+
+    <!-- Teachable Machine -->
+    <div>Teachable Machine Image Model</div>
+    <button type="button" id="teachableMachineButton" onclick="init()">Start</button>
+    <div id="webcam-container"></div>
+    <div id="label-container"></div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // 이벤트 리스너 추가
+        const uploadButton = document.getElementById('uploadButton');
+        uploadButton.addEventListener('click', async function() {
+            // 이벤트 핸들러 내용
+        });
+    </script>
+</body>
+</html>
